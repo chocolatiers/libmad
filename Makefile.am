@@ -33,8 +33,11 @@ minimad_SOURCES =	minimad.c
 minimad_INCLUDES =	
 minimad_LDADD =		libmad.la
 
-EXTRA_DIST =		mad.h.sed  \
+EXTRA_DIST =		mad.h.sed mad.pc.in \
 			CHANGES COPYRIGHT CREDITS README TODO VERSION
+
+pkgconfigdir = $(libdir)/pkgconfig
+pkgconfig_DATA= mad.pc
 
 exported_headers =	version.h fixed.h bit.h timer.h stream.h frame.h  \
 			synth.h decoder.h
