@@ -26,9 +26,9 @@ AC_PREREQ(2.53)
 
 AC_CONFIG_SRCDIR([decoder.h])
 
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([silent-rules])
 
-AM_CONFIG_HEADER([config.h])
+AC_CONFIG_HEADERS([config.h])
 
 dnl System type.
 
